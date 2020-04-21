@@ -1,4 +1,4 @@
-import { login, isLoggedIn, logout } from "./authenticate";
+import { login, isLoggedIn, logout } from "./authentication";
 
 describe(__filename, () => {
   beforeEach(() => sessionStorage.removeItem("AUTH_TOKEN"));

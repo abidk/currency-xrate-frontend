@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Router from "next/router";
-import { isLoggedIn, logout } from "../utils/authenticate";
+import { isLoggedIn, logout } from "../utils/authentication";
 import { isClientSide } from "../utils/environment";
 
 const Layout = (props) => {

@@ -2,11 +2,15 @@ const containsDigits = (val) => /[0-9]/.test(val);
 const containsUpper = (val) => /[A-Z]/.test(val);
 const containsLower = (val) => /[a-z]/.test(val);
 
-export const validateUsername = (username) => username && username.length >= 5;
+const USERNAME_LENGTH_THRESHOLD = 5;
+const PASSWORD_LENGTH_THRESHOLD = 5;
+
+export const validateUsername = (username) =>
+  username && username.length >= USERNAME_LENGTH_THRESHOLD;
 
 export const validatePassword = (password) =>
   password &&
-  password.length >= 8 &&
+  password.length >= PASSWORD_LENGTH_THRESHOLD &&
   containsDigits(password) &&
   containsUpper(password) &&
   containsLower(password);

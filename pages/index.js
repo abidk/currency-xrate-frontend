@@ -1,8 +1,7 @@
 import fetch from "node-fetch";
 import Router from "next/router";
 import Layout from "../components/Layout";
-import { isLoggedIn } from "../utils/authenticate";
-import { isClientSide } from "../utils/environment";
+import withAuth from "../components/withAuth";
 
 const Row = ({ item }) => {
   const { currency, quote } = item;
@@ -34,13 +33,8 @@ const Table = ({ items }) => {
   );
 };
 
-export default function Exchange({ data }) {
+const Index = ({ data }) => {
   const { base, rates } = data.rates;
-
-  if (isClientSide && !isLoggedIn()) {
-    Router.push("/login");
-    return null;
-  }
 
   return (
     <Layout>
@@ -55,7 +49,9 @@ export default function Exchange({ data }) {
       </div>
     </Layout>
   );
-}
+};
+
+export default withAuth(Index);
 
 export async function getServerSideProps() {
   const res = await fetch(`http://localhost:8080/rates/EUR/2011-01-01`);

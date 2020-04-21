@@ -1,4 +1,4 @@
-import { validateUsername, validatePassword } from "./validate";
+import { validateUsername, validatePassword } from "./validation";
 
 describe(__filename, () => {
   describe("validateUsername", () => {

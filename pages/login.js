@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Router from "next/router";
 import Layout from "../components/Layout";
-import { login } from "../utils/authenticate";
+import { login } from "../utils/authentication";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -27,7 +27,7 @@ export default function Login() {
               <div className="card-body">
                 <form className="form-login" onSubmit={handleSubmit}>
                   {error && (
-                    <div class="error alert alert-danger" role="alert">
+                    <div className="error alert alert-danger" role="alert">
                       {error}
                     </div>
                   )}

@@ -1,4 +1,4 @@
-import { validateUsername, validatePassword } from "./validate";
+import { validateUsername, validatePassword } from "./validation";
 
 const AUTH_TOKEN = "AUTH_TOKEN";
 
