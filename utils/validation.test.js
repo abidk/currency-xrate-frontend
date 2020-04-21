@@ -13,7 +13,7 @@ describe(__filename, () => {
 
   describe("validatePassword", () => {
     it("should not validate when password is not the correct length ", () => {
-      expect(validatePassword("123")).toEqual(false);
+      expect(validatePassword("Abc4567")).toEqual(false);
     });
     it("should not validate when password does not contain an uppercase letter", () => {
       expect(validatePassword("abc45678")).toEqual(false);
