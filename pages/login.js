@@ -29,7 +29,6 @@ export default function Login() {
                       className="form-control"
                       placeholder="Email address"
                       onChange={(e) => setUsername(e.target.value)}
-                      value={username}
                       autoFocus
                     />
                   </div>
@@ -40,7 +39,6 @@ export default function Login() {
                       className="form-control"
                       placeholder="Password"
                       onChange={(e) => setPassword(e.target.value)}
-                      value={password}
                     />
                   </div>
                   <button

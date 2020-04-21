@@ -42,7 +42,6 @@ exports[`/Users/abid/Documents/currency-xrate/currency-xrate-frontend/pages/logi
                           onChange={[Function]}
                           placeholder="Email address"
                           type="email"
-                          value=""
                         />
                       </div>
                       <div
@@ -53,7 +52,6 @@ exports[`/Users/abid/Documents/currency-xrate/currency-xrate-frontend/pages/logi
                           onChange={[Function]}
                           placeholder="Password"
                           type="password"
-                          value=""
                         />
                       </div>
                       <button
