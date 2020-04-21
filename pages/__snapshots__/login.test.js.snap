@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/Users/abid/Documents/currency-xrate/currency-xrate-frontend/pages/login.test.js rendered page should match snapshot 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="main"
+        >
+          <div
+            className="login"
+          >
+            <div
+              className="row justify-content-center"
+            >
+              <div
+                className="col-xs-3"
+              >
+                <div
+                  className="card"
+                >
+                  <div
+                    className="card-body"
+                  >
+                    <form
+                      className="form-login"
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="form-label-group mb-2"
+                      >
+                        <input
+                          autoFocus={true}
+                          className="form-control"
+                          onChange={[Function]}
+                          placeholder="Email address"
+                          type="email"
+                          value=""
+                        />
+                      </div>
+                      <div
+                        className="form-label-group mb-2"
+                      >
+                        <input
+                          className="form-control"
+                          onChange={[Function]}
+                          placeholder="Password"
+                          type="password"
+                          value=""
+                        />
+                      </div>
+                      <button
+                        className="btn btn-lg btn-primary btn-block text-uppercase"
+                        type="submit"
+                      >
+                        Sign in
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

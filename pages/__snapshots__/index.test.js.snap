@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/Users/abid/Documents/currency-xrate/currency-xrate-frontend/pages/index.test.js rendered page should match snapshot 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="main"
+        >
+          <div
+            className="exchange"
+          >
+            <h1
+              className="mb-3"
+            >
+              Historical data
+            </h1>
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <p>
+                  Base Currency: 
+                </p>
+                <div
+                  className="table-responsive-sm"
+                >
+                  <table
+                    className="table"
+                  >
+                    <thead
+                      className="thead-dark"
+                    >
+                      <tr>
+                        <th
+                          scope="col"
+                        >
+                          Currency
+                        </th>
+                        <th
+                          scope="col"
+                        >
+                          Value
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          GBP
+                        </td>
+                        <td>
+                          0.86075
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
