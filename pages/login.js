@@ -6,12 +6,15 @@ import { login } from "../utils/authenticate";
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (login(username, password)) {
       Router.push("/");
+    } else {
+      setError("Login failed. Please check your login details and try again.");
     }
   };
 
@@ -23,6 +26,12 @@ export default function Login() {
             <div className="card">
               <div className="card-body">
                 <form className="form-login" onSubmit={handleSubmit}>
+                  {error && (
+                    <div class="error alert alert-danger" role="alert">
+                      {error}
+                    </div>
+                  )}
+
                   <div className="form-label-group mb-2">
                     <input
                       type="email"
