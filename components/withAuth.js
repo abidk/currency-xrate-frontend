@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Router from "next/router";
 import { isLoggedIn } from "../utils/authentication";
 import { isClientSide } from "../utils/environment";
