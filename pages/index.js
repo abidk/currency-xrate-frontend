@@ -75,7 +75,8 @@ Index.propTypes = {
 export default withAuth(Index);
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:8080/rates/EUR/2011-01-01`);
+  const config = require("../utils/config");
+  const res = await fetch(`${config.BACKEND_URL}/rates/EUR/2011-01-01`);
   const data = await res.json();
   return { props: { data } };
 }
