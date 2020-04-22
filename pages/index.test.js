@@ -7,7 +7,7 @@ describe(__filename, () => {
   it("rendered page should match snapshot", () => {
     const data = {
       rates: {
-        base: "EUR",
+        base: { value: "EUR" },
         rates: [{ currency: { value: "GBP" }, quote: { value: "0.86075" } }],
       },
     };

@@ -1,5 +1,6 @@
 import fetch from "node-fetch";
 import Router from "next/router";
+import PropTypes from "prop-types";
 import Layout from "../components/Layout";
 import withAuth from "../components/withAuth";
 
@@ -49,6 +50,26 @@ const Index = ({ data }) => {
       </div>
     </Layout>
   );
+};
+
+Index.propTypes = {
+  data: PropTypes.shape({
+    rates: PropTypes.shape({
+      base: PropTypes.shape({
+        value: PropTypes.string.isRequired,
+      }).isRequired,
+      rates: PropTypes.arrayOf(
+        PropTypes.shape({
+          currency: PropTypes.shape({
+            value: PropTypes.string.isRequired,
+          }).isRequired,
+          quote: PropTypes.shape({
+            value: PropTypes.string.isRequired,
+          }).isRequired,
+        })
+      ).isRequired,
+    }).isRequired,
+  }),
 };
 
 export default withAuth(Index);

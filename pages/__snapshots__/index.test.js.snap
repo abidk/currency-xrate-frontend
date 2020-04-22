@@ -30,6 +30,7 @@ exports[`/Users/abid/Documents/currency-xrate/currency-xrate-frontend/pages/inde
               >
                 <p>
                   Base Currency: 
+                  EUR
                 </p>
                 <div
                   className="table-responsive-sm"
